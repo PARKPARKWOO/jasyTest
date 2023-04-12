@@ -5,10 +5,11 @@
 #    password: ${JASYPT_PASSWORD}
 jasypt:
   encryptor:
-    bean: encryptorBean
+    bean: jasyptStringEncryptor
+
 config:
   encrypt:
-    password: "qorwns"
+    password: qorwns
     algorithm: PBEWithMD5AndDES
     provider-name: SunJCE
     pool-size: 1

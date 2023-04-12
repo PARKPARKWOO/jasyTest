@@ -3,7 +3,7 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
     username: ENC(ll4zKFuVNixjZ6I+y/0RYQ==)
     password: ENC(KdhgHp6Vqy9QNQxC3RGcmNWCoTGCZ3tL)
-    url: ENC(3b6dMW/+Pbg+a2i2Bi+k0MGsWm1bvTSJOQG+QjZaALsxtHhe7mwgRB7zPjg1PJZlDQ8tDRMGI3s7B4etFWO1hw==)
+    url: ENC(ZomzDT2uG2jDiy69tMpypGRdc2A/lKVA29lyXd05ugV84uVjO6sq4dMvjYqs5RshGNx3RN11Wo63KzDoN7WchJ8NdbGV+NEApNRsG6zyrnB7z3t1Pb9DwehE2uklzmMMndYWUKdRqeNZ5M6+k6rY9u3u6szRDSLPXmVDFFqwgYpxd1bdaRP++w==)
   thymeleaf:
     cache: false
     prefix: file:src/main/resources/templates/
@@ -26,3 +26,16 @@ logging.level:
     SQL: debug
     #    type: trace # (Spring boot 2.X.X)
     orm.jdbc.bind: trace # (Spring boot 3.X.X)
+jasypt:
+  encryptor:
+    bean: jasyptStringEncryptor
+    password: qorwns
+##config:
+#  encrypt:
+#    password: qorwns
+#    algorithm: PBEWithMD5AndDES
+#    provider-name: SunJCE
+#    pool-size: 1
+#    key-obtention-iterations: 1000
+#    string-output-type: base64
+
