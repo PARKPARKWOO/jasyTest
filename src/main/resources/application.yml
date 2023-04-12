@@ -29,13 +29,4 @@ logging.level:
 jasypt:
   encryptor:
     bean: jasyptStringEncryptor
-    password: qorwns
-##config:
-#  encrypt:
-#    password: qorwns
-#    algorithm: PBEWithMD5AndDES
-#    provider-name: SunJCE
-#    pool-size: 1
-#    key-obtention-iterations: 1000
-#    string-output-type: base64
 
