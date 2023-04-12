@@ -1,0 +1,28 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: ENC(ll4zKFuVNixjZ6I+y/0RYQ==)
+    password: ENC(KdhgHp6Vqy9QNQxC3RGcmNWCoTGCZ3tL)
+    url: ENC(3b6dMW/+Pbg+a2i2Bi+k0MGsWm1bvTSJOQG+QjZaALsxtHhe7mwgRB7zPjg1PJZlDQ8tDRMGI3s7B4etFWO1hw==)
+  thymeleaf:
+    cache: false
+    prefix: file:src/main/resources/templates/
+    devtools:
+      livereload:
+        enabled: true
+      restart:
+        enabled: true
+
+  jpa:
+    hibernate:
+      ddl-auto: create
+    properties:
+      hibernate:
+        format_sql: true
+        show_sql: true
+
+logging.level:
+  org.hibernate:
+    SQL: debug
+    #    type: trace # (Spring boot 2.X.X)
+    orm.jdbc.bind: trace # (Spring boot 3.X.X)
