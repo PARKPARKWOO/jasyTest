@@ -22,9 +22,9 @@ jobs:
           distribution: adopt #  jdk를 제공하는 벤더사 이름입니다. (zulu, adopt, microsoft 등) 즉 어느 jdk를 사용할 것인지를 설정
       - name: access to secrets
         env:
-          run: |
-            echo "TEST_KEY=$TEST_KEY" >> .env
-          TEST_KEY: ${{  secrets.TEST_KEY  }}
+        run: |
+          echo "TEST_KEY=$TEST_KEY" >> .env
+        TEST_KEY: ${{  secrets.TEST_KEY  }}
           
       # 캐싱 부분 추가  ( 테스트 속도 향상)
       - name: Cache Gradle packages
