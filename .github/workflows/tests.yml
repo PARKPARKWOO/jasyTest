@@ -24,7 +24,7 @@ jobs:
         env:
         run: |
           echo "TEST_KEY=$TEST_KEY" >> .env
-        TEST_KEY: ${{  secrets.TEST_KEY  }}
+        TEST_KEY: ${{secrets.TEST_KEY}}
           
       # 캐싱 부분 추가  ( 테스트 속도 향상)
       - name: Cache Gradle packages
